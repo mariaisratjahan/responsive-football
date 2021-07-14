@@ -15,6 +15,13 @@ header{
     align-items: center;
     line-height: 80px;
 }
+.header-left-content{
+    width:485px;
+    height:230px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+}
 .header-left-content h3{
    color: #FFFFFF;
    font-size: 64px;
