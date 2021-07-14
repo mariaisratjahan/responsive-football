@@ -22,7 +22,7 @@ header{
     flex-direction: column;
     justify-content: center;
 }
-.header-left-content h3{
+.header-left-content h2{
    color: #FFFFFF;
    font-size: 64px;
    margin-bottom: 27px;
