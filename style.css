@@ -72,7 +72,7 @@ main{
 .players{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    margin:0 140px;
+    margin:0 180px;
     grid-column-gap: 30px;
     grid-row-gap: 27px;
     background: #FFFFFF;
@@ -95,6 +95,7 @@ main{
     margin-bottom: 10px;
     margin-top: 0;
     color: #18191F;
+    font-size: 28px;
 }
 .players-info p{
     margin: 0;
