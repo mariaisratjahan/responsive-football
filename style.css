@@ -4,6 +4,8 @@ body{
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
+/*----------------------------------------------
+------------ header section styles----------------- */
 header{
     background-color: #2D25A0;
     transition: background-color 4s ease-in-out ;
@@ -63,7 +65,7 @@ header:hover{
     margin-left:20px;
 }
 /* ----------------------------------------
------------------players section--------- */
+-----------------players section style--------- */
 main{
     padding-top: 70px;
 }
@@ -223,7 +225,7 @@ footer{
 /* --------------------------------------------------------------
 ----------------------media query for phone device---------------- */
 
-@media only screen and (max-width:688px) {
+@media screen and (max-width:688px) {
     .header-container{
         display: flex;
         flex-direction: column;
@@ -239,8 +241,6 @@ footer{
         justify-content: center;
     }
     .header-container img{
-        /* display: block;
-        width:100%; */
         display: block;
         width:300px;
         height:auto;
@@ -257,6 +257,16 @@ footer{
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         margin: auto;
+    }
+    .subscribe{
+        padding:100px 0;
+        margin:50px 0; 
+        border-radius:0px;
+    }
+    .subscribe p input{
+        width:80%;
+        padding:20px;
+          
     }
    .footer-content{
        width:100%;
