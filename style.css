@@ -6,6 +6,10 @@ body{
 }
 header{
     background-color: #2D25A0;
+    transition: background-color 4s ease-in-out ;
+}
+header:hover{
+    background-color: rgb(92, 138, 18);
 }
 .header-container{
     display:flex;
@@ -16,8 +20,9 @@ header{
     line-height: 80px;
 }
 .header-left-content{
-    width:485px;
-    height:230px;
+    padding:15px;
+    /* width:485px;
+    height:230px; */
     display:flex;
     flex-direction: column;
     justify-content: center;
@@ -56,4 +61,210 @@ header{
     width:556px;
     height:438px;
     margin-left:20px;
+}
+/* ----------------------------------------
+-----------------players section--------- */
+main{
+    padding-top: 70px;
+}
+.players{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin:0 140px;
+    grid-column-gap: 30px;
+    grid-row-gap: 27px;
+    background: #FFFFFF;
+
+}
+.players-info{
+    display: flex;
+    flex-direction: column;
+    width:300px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    padding:15px;
+}
+.players-info img{
+    width:300px;
+    height:256px;
+    margin-bottom: 16px;
+}
+.players-info h3{
+    margin-bottom: 10px;
+    margin-top: 0;
+    color: #18191F;
+}
+.players-info p{
+    margin: 0;
+    font-size: 16px;
+    line-height: 26px;   
+    color: #6C6C6C;
+}
+.join-club{
+    display: flex;
+    flex-direction: column;
+    width:100%;
+    height:500px;
+    background-image: url(images/bg.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+/* -------------join club section style---------
+----------------------------------------------- */
+.join-club{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.join-club h3{
+    color: #FFFFFF;
+    font-size: 40px;
+    margin-bottom: 27px;
+    margin-top: 0;
+}
+.join-club p{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    width:168px;
+    height:44px;
+    background-color:#E02C6D;
+    cursor: pointer;
+}
+.join-club a{
+    color:white;
+    text-decoration: none;
+}
+/*---------------------------------------------------
+-------------- subscribe section style----------------- */
+.subscribe{
+    text-align: center;
+    margin: 50px;
+    border: 1px solid black;
+    background-color: #5c64cf9d;
+    padding:100px;
+    border-radius: 30px;
+    margin: 100px;
+}
+.subscribe h3{
+    color: #181717;
+    font-size: 30px;
+    margin-bottom: 27px;
+    margin-top: 0;
+
+}
+.subscribe p{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.subscribe p input{
+    display: block;
+    width:50%;
+    color:black;
+    background-color: rgba(249, 253, 251, 0.664);
+    border-radius: 30px;
+    padding:20px;
+    font-size: 20px;
+    margin-bottom: 20px;
+    border: none;
+
+}
+.subscribe p button{
+    display: block;
+    padding:15px;
+    font-size: 20px;
+    padding:10px 30px;
+    background-color: rgb(19, 17, 19);
+    color:white;
+    cursor: pointer;
+}
+/* ------------------------------------
+--------------footer-------------------*/
+footer{
+    padding:63px 0;
+}
+.footer-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    width:484px;
+    
+}
+.footer-content .logo{
+    width:484px;
+    height:110px;
+}
+.footer-icons{
+    display: flex;
+}
+.footer-icons .icon{
+    cursor: pointer;
+    color: #969BAB;
+    width:17px;
+    height:17px;
+    background:#d6d8e0; 
+    margin-right: 14px;
+    border-radius: 17px;
+    padding: 7px;
+    text-align: center;
+}
+.footer-content p{
+    margin-top: 20px;
+    color: #000000;
+    font-weight: 400;
+
+}
+
+/* --------------------------------------------------------------
+----------------------media query for phone device---------------- */
+
+@media only screen and (max-width:688px) {
+    .header-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding:0;
+        line-height: normal;
+    }
+    .header-left-content{
+        display: flex;
+        flex-wrap: wrap;
+        margin:0;
+        justify-content: center;
+    }
+    .header-container img{
+        /* display: block;
+        width:100%; */
+        display: block;
+        width:300px;
+        height:auto;
+        margin:30px;
+    }
+    .header-left-content h2{
+        font-size: 36px;
+    }
+    .player-section{
+        display:flex;
+        align-items: center;
+    }
+    .players{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        margin: auto;
+    }
+   .footer-content{
+       width:100%;
+       text-align: center;
+   }
+   .footer-content .logo{
+       width:70%;
+       
+   }
+   
 }
